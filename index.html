@@ -1,329 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Devansh Rajoura - Computer Science student portfolio">
-    <title>Devansh Rajoura | Computer Science Student</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devansh Rajoura — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
 
-    <header class="site-header">
-        <nav class="navbar container">
-            <a href="#home" class="logo">DR<span>.</span></a>
+  <!-- ════════════════════════════════════════════════════
+       NAVIGATION BAR
+       ════════════════════════════════════════════════════ -->
+  <header class="navbar" id="top">
+    <nav class="navbar__inner">
+      <a href="#top" class="navbar__logo">
+        <span class="navbar__logo-icon">▶</span>
+        <span class="navbar__logo-text">DEVANSH RAJOURA</span>
+      </a>
 
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-            </div>
+      <!-- Hamburger toggle (CSS only) -->
+      <input type="checkbox" id="nav-toggle" class="navbar__toggle-input" />
+      <label for="nav-toggle" class="navbar__toggle-label" aria-label="Toggle navigation">
+        <span class="navbar__hamburger"></span>
+      </label>
 
-            <a class="nav-button" href="#contact">Let's Talk</a>
-        </nav>
-    </header>
+      <ul class="navbar__links">
+        <li><a href="#about" class="navbar__link">About</a></li>
+        <li><a href="#skills" class="navbar__link">Skills</a></li>
+        <li><a href="#projects" class="navbar__link">Quests</a></li>
+        <li><a href="#education" class="navbar__link">Journey</a></li>
+        <li><a href="#contact" class="navbar__link navbar__link--cta">Contact ✉</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
+  <main>
+    <!-- ════════════════════════════════════════════════════
+         HERO SECTION
+         ════════════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <!-- Floating decorative shapes -->
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+      <div class="hero__shape hero__shape--4"></div>
+      <div class="hero__shape hero__shape--5"></div>
 
-        <section id="home" class="hero">
-            <div class="hero-bg hero-bg-one"></div>
-            <div class="hero-bg hero-bg-two"></div>
-
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <p class="eyebrow">COMPUTER SCIENCE • BUILDER • LEARNER</p>
-                    <h1>Hi, I'm <span>Devansh.</span></h1>
-                    <h2>I build things while learning how they work.</h2>
-                    <p class="hero-description">
-                        I'm a Computer Science student interested in AI, software development,
-                        web technologies and building practical projects from scratch.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#projects" class="button primary">View Projects ↓</a>
-                        <a href="#contact" class="button secondary">Contact Me</a>
-                    </div>
-
-                    <div class="quick-stats">
-                        <div>
-                            <strong>CS</strong>
-                            <span>Student</span>
-                        </div>
-                        <div>
-                            <strong>5+</strong>
-                            <span>Projects</span>
-                        </div>
-                        <div>
-                            <strong>∞</strong>
-                            <span>Things to Learn</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="terminal-card">
-                    <div class="terminal-top">
-                        <span></span><span></span><span></span>
-                        <p>devansh@portfolio:~</p>
-                    </div>
-                    <div class="terminal-body">
-                        <p><b>$ whoami</b></p>
-                        <p class="terminal-value">Devansh Rajoura</p>
-
-                        <p><b>$ role</b></p>
-                        <p class="terminal-value">Computer Science Student</p>
-
-                        <p><b>$ interests</b></p>
-                        <p class="terminal-value">AI • Web • Software</p>
-
-                        <p><b>$ status</b></p>
-                        <p class="terminal-value status">● BUILDING & LEARNING</p>
-
-                        <p class="cursor-line">$ <span class="cursor"></span></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="container about-grid">
-                <div class="section-heading">
-                    <p class="eyebrow">01 — ABOUT</p>
-                    <h2>Curious by nature.<br><span>Builder by choice.</span></h2>
-                </div>
-
-                <div class="about-text">
-                    <p>
-                        I'm a Computer Science student who enjoys understanding how technology
-                        works and turning ideas into working projects.
-                    </p>
-                    <p>
-                        I started with programming fundamentals and web development and I'm
-                        continuing to explore areas such as AI, software engineering and
-                        problem solving.
-                    </p>
-
-                    <div class="quote">
-                        <span>“</span>
-                        Learn it. Build it. Break it. Fix it.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section section-dark">
-            <div class="container">
-                <div class="section-heading centered">
-                    <p class="eyebrow">02 — SKILLS</p>
-                    <h2>Tools I use to <span>build.</span></h2>
-                    <p>Technologies I'm learning and using in my projects.</p>
-                </div>
-
-                <div class="skills-grid">
-                    <article class="skill-card featured">
-                        <div class="skill-number">01</div>
-                        <h3>Python</h3>
-                        <p>Programming fundamentals, automation and project development.</p>
-                        <div class="skill-tags">
-                            <span>Logic</span>
-                            <span>Automation</span>
-                            <span>Projects</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-number">02</div>
-                        <h3>HTML & CSS</h3>
-                        <p>Responsive interfaces using semantic HTML, Flexbox and Grid.</p>
-                        <div class="skill-tags">
-                            <span>Flexbox</span>
-                            <span>Grid</span>
-                            <span>Responsive</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-number">03</div>
-                        <h3>Java</h3>
-                        <p>Core programming concepts, loops, arrays, methods and problem solving.</p>
-                        <div class="skill-tags">
-                            <span>Core Java</span>
-                            <span>Arrays</span>
-                            <span>Logic</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <div class="skill-number">04</div>
-                        <h3>SQL & Git</h3>
-                        <p>Working with data and maintaining projects with version control.</p>
-                        <div class="skill-tags">
-                            <span>SQL</span>
-                            <span>Git</span>
-                            <span>GitHub</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <div class="section-heading project-heading">
-                    <div>
-                        <p class="eyebrow">03 — SELECTED WORK</p>
-                        <h2>Things I've <span>built.</span></h2>
-                    </div>
-                    <p>Small projects that helped me learn by actually building.</p>
-                </div>
-
-                <div class="projects-grid">
-
-                    <article class="project-card project-large">
-                        <div class="project-visual python-visual">
-                            <span class="visual-label">PYTHON</span>
-                            <div class="code-lines">
-                                <i></i><i></i><i></i><i></i><i></i>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-index">PROJECT 01</p>
-                            <h3>Smart Study Planner</h3>
-                            <p>
-                                A productivity-focused Python project designed to organize
-                                study tasks and make planning easier.
-                            </p>
-                            <div class="project-footer">
-                                <span>Python</span>
-                                <span>Logic</span>
-                            </div>    
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-visual expense-visual">
-                            <div class="expense-symbol">₹</div>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-index">PROJECT 02</p>
-                            <h3>Expense Tracker</h3>
-                            <p>Track expenses and organize spending through a simple interface.</p>
-                            <div class="project-footer">
-                                <span>Python</span>
-                                <span>Data</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-visual web-visual">
-                            <div class="browser-bar">
-                                <span></span><span></span><span></span>
-                            </div>
-                            <div class="browser-content"></div>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-index">PROJECT 03</p>
-                            <h3>Responsive Web Project</h3>
-                            <p>A responsive website built to practise Grid, Flexbox and CSS.</p>
-                            <div class="project-footer">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-visual files-visual">
-                            <div class="folder">▰</div>
-                            <div class="folder small">▰</div>
-                            <div class="folder tiny">▰</div>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-index">PROJECT 04</p>
-                            <h3>File Organizer</h3>
-                            <p>Python automation project that helps organize files into folders.</p>
-                            <div class="project-footer">
-                                <span>Python</span>
-                                <span>Automation</span>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section section-dark">
-            <div class="container education-grid">
-                <div class="section-heading">
-                    <p class="eyebrow">04 — JOURNEY</p>
-                    <h2>Learning is<br><span>the project.</span></h2>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-date">CURRENT</p>
-                        <h3>Computer Science</h3>
-                        <p>Studying Computer Science while building projects and strengthening programming fundamentals.</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-date">FOUNDATIONS</p>
-                        <h3>Programming & Web Development</h3>
-                        <p>Built a foundation in Python, Java, SQL, HTML and CSS through coursework and hands-on practice.</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-date">NEXT</p>
-                        <h3>AI & Software Engineering</h3>
-                        <p>Continuing to explore AI, software engineering and increasingly complex projects.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-            <div class="container contact-box">
-                <div>
-                    <p class="eyebrow">05 — CONTACT</p>
-                    <h2>Have an idea?<br><span>Let's connect.</span></h2>
-                    <p class="contact-copy">
-                        Whether it's a project, collaboration or just a conversation about
-                        technology, feel free to reach out.
-                    </p>
-                </div>
-
-                <div class="contact-links">
-                    <a href="mailto:devanshedt@gmail.com">
-                        <small>EMAIL</small>
-                        devanshedt@gmail.com
-                    </a>
-                    <a href="https://github.com/if-elseEnjoyer" target="_blank" rel="noopener">
-                        <small>GITHUB</small>
-                        github.com/if-elseEnjoyer
-                    </a>
-                    <a href="https://www.linkedin.com/in/devansh-rajoura/" target="_blank" rel="noopener">
-                        <small>LINKEDIN</small>
-                        linkedin.com/in/devansh-rajoura
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>© 2026 Devansh Rajoura</p>
-            <p>Built with <strong>HTML + CSS</strong></p>
-            <a href="#home">Back to top ↑</a>
+      <div class="hero__content">
+        <p class="hero__tag">PLAYER 01</p>
+        <h1 class="hero__name">DEVANSH<br />RAJOURA</h1>
+        <p class="hero__role">
+          <span class="hero__level">LVL</span> Computer Science Student
+        </p>
+        <p class="hero__status">
+          <span class="hero__status-dot"></span>
+          ONLINE &bull; READY TO BUILD
+        </p>
+        <div class="hero__buttons">
+          <a href="#projects" class="btn btn--primary">▶ VIEW QUESTS</a>
+          <a href="#contact" class="btn btn--outline">🏆 CONNECT</a>
         </div>
-    </footer>
+      </div>
+
+      <!-- Decorative avatar frame -->
+      <div class="hero__avatar-wrapper">
+        <div class="hero__avatar">
+          <div class="hero__avatar-placeholder">
+            <img
+              src="https://mc-heads.net/body/MHF_Steve/200"
+              alt="Minecraft avatar of Devansh"
+              class="hero__avatar-img"
+            />
+          </div>
+          <div class="hero__avatar-frame"></div>
+        </div>
+        <div class="hero__avatar-stats">
+          <span class="hero__stat">HP ████████░░</span>
+          <span class="hero__stat">MP ██████░░░░</span>
+          <span class="hero__stat">XP ████████████</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         ABOUT SECTION
+         ════════════════════════════════════════════════════ -->
+    <section class="about" id="about">
+      <h2 class="section-title">
+        <span class="section-title__icon">👤</span>
+        PLAYER PROFILE
+      </h2>
+
+      <div class="about__card">
+        <div class="about__card-header">
+          <span class="about__card-label">CHARACTER SHEET</span>
+          <span class="about__card-id">#001</span>
+        </div>
+        <div class="about__card-body">
+          <div class="about__info">
+            <p class="about__text">
+              Hey there! I'm <strong>Devansh Rajoura</strong>, a Computer Science student
+              who's passionate about building things on the web. I love turning ideas into
+              interactive, pixel-perfect experiences using HTML &amp; CSS.
+            </p>
+            <p class="about__text">
+              When I'm not coding, you'll find me exploring new technologies, experimenting
+              with creative designs, and leveling up my developer skills one project at a time.
+            </p>
+          </div>
+          <div class="about__stats-grid">
+            <div class="about__stat-box">
+              <span class="about__stat-label">CLASS</span>
+              <span class="about__stat-value">Frontend Dev</span>
+            </div>
+            <div class="about__stat-box">
+              <span class="about__stat-label">QUEST</span>
+              <span class="about__stat-value">Web Mastery</span>
+            </div>
+            <div class="about__stat-box">
+              <span class="about__stat-label">BASE</span>
+              <span class="about__stat-value">India 🇮🇳</span>
+            </div>
+            <div class="about__stat-box">
+              <span class="about__stat-label">STATUS</span>
+              <span class="about__stat-value about__stat-value--active">Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         SKILLS SECTION
+         ════════════════════════════════════════════════════ -->
+    <section class="skills" id="skills">
+      <h2 class="section-title">
+        <span class="section-title__icon">⚔️</span>
+        EQUIPPED ABILITIES
+      </h2>
+
+      <div class="skills__grid">
+        <!-- Skill Card: HTML -->
+        <div class="skill-card">
+          <div class="skill-card__icon">🏗️</div>
+          <h3 class="skill-card__name">HTML</h3>
+          <p class="skill-card__desc">Semantic structure &amp; accessibility</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__bar-fill skill-card__bar-fill--html"></div>
+          </div>
+          <span class="skill-card__rarity skill-card__rarity--legendary">LEGENDARY</span>
+        </div>
+
+        <!-- Skill Card: CSS -->
+        <div class="skill-card">
+          <div class="skill-card__icon">🎨</div>
+          <h3 class="skill-card__name">CSS</h3>
+          <p class="skill-card__desc">Layouts, animations &amp; responsive design</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__bar-fill skill-card__bar-fill--css"></div>
+          </div>
+          <span class="skill-card__rarity skill-card__rarity--legendary">LEGENDARY</span>
+        </div>
+
+        <!-- Skill Card: Flexbox -->
+        <div class="skill-card">
+          <div class="skill-card__icon">📦</div>
+          <h3 class="skill-card__name">Flexbox</h3>
+          <p class="skill-card__desc">Flexible layouts &amp; alignment</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__bar-fill skill-card__bar-fill--flex"></div>
+          </div>
+          <span class="skill-card__rarity skill-card__rarity--epic">EPIC</span>
+        </div>
+
+        <!-- Skill Card: CSS Grid -->
+        <div class="skill-card">
+          <div class="skill-card__icon">🔲</div>
+          <h3 class="skill-card__name">CSS Grid</h3>
+          <p class="skill-card__desc">Complex grid-based layouts</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__bar-fill skill-card__bar-fill--grid"></div>
+          </div>
+          <span class="skill-card__rarity skill-card__rarity--epic">EPIC</span>
+        </div>
+
+        <!-- Skill Card: Git -->
+        <div class="skill-card">
+          <div class="skill-card__icon">🌿</div>
+          <h3 class="skill-card__name">Git &amp; GitHub</h3>
+          <p class="skill-card__desc">Version control &amp; collaboration</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__bar-fill skill-card__bar-fill--git"></div>
+          </div>
+          <span class="skill-card__rarity skill-card__rarity--rare">RARE</span>
+        </div>
+
+        <!-- Skill Card: Currently Learning -->
+        <div class="skill-card skill-card--learning">
+          <div class="skill-card__icon">⚡</div>
+          <h3 class="skill-card__name">JavaScript</h3>
+          <p class="skill-card__desc">Currently unlocking...</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__bar-fill skill-card__bar-fill--js"></div>
+          </div>
+          <span class="skill-card__rarity skill-card__rarity--uncommon">UNLOCKING</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         PROJECTS SECTION
+         ════════════════════════════════════════════════════ -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">
+        <span class="section-title__icon">🏆</span>
+        QUEST LOG
+      </h2>
+      <p class="section-subtitle">Achievements unlocked during my web development journey.</p>
+
+      <div class="projects__grid">
+        <!-- Project Card 1 -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <div class="project-card__image-placeholder">
+              <span>📚</span>
+            </div>
+            <span class="project-card__badge">COMPLETED</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Smart Study Planner</h3>
+            <p class="project-card__desc">
+              A Python-based study planner that helps organize study sessions
+              and plan tasks based on subjects, priorities, and available time.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <div class="project-card__image-placeholder">
+              <span>💰</span>
+            </div>
+            <span class="project-card__badge">COMPLETED</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Expense Tracker</h3>
+            <p class="project-card__desc">
+              A Python application for recording daily expenses, organizing
+              spending, and keeping track of personal finances.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <div class="project-card__image-placeholder">
+              <span>📁</span>
+            </div>
+            <span class="project-card__badge">COMPLETED</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">File Organizer</h3>
+            <p class="project-card__desc">
+              A Python utility that automatically organizes files into folders
+              based on their file types, making cluttered directories easier to manage.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 4 -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <div class="project-card__image-placeholder">
+              <span>⌨️</span>
+            </div>
+            <span class="project-card__badge">COMPLETED</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Typing Speed Tester</h3>
+            <p class="project-card__desc">
+              A Python-based typing test that measures typing speed and accuracy
+              while the user types a given passage.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 5 -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <div class="project-card__image-placeholder">
+              <span>🔐</span>
+            </div>
+            <span class="project-card__badge">COMPLETED</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Password Generator</h3>
+            <p class="project-card__desc">
+              A Python utility that generates strong random passwords using a
+              combination of letters, numbers, and special characters.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         EDUCATION / EXPERIENCE SECTION
+         ════════════════════════════════════════════════════ -->
+    <section class="education" id="education">
+      <h2 class="section-title">
+        <span class="section-title__icon">🗺️</span>
+        THE JOURNEY
+      </h2>
+
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2025 — Present</span>
+            <h3 class="timeline__title">B.Sc Computer Science at Scaler School Of Technology</h3>
+            <p class="timeline__place">University Studies</p>
+            <p class="timeline__desc">
+              Currently pursuing my degree while building real-world web projects
+              and deepening my understanding of computer science fundamentals.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2026</span>
+            <h3 class="timeline__title">Web Development Course</h3>
+            <p class="timeline__place">Full Stack Learning Path</p>
+            <p class="timeline__desc">
+              Mastering HTML, CSS, Flexbox, Grid, responsive design, animations,
+              and preparing to unlock JavaScript and React.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__marker timeline__marker--active"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">NOW</span>
+            <h3 class="timeline__title">Building &amp; Learning</h3>
+            <p class="timeline__place">The Adventure Continues</p>
+            <p class="timeline__desc">
+              Currently building portfolio projects, learning by doing, and
+              leveling up one commit at a time. 🚀
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         CONTACT SECTION
+         ════════════════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">
+        <span class="section-title__icon">📬</span>
+        SEND A MESSAGE
+      </h2>
+      <p class="section-subtitle">Want to team up? Drop me a message!</p>
+
+      <div class="contact__wrapper">
+        <form class="contact__form" action="#" method="post">
+          <div class="form-group">
+            <label for="name" class="form-label">YOUR NAME</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              placeholder="Enter your name..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">YOUR EMAIL</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="Enter your email..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">YOUR MESSAGE</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-input form-textarea"
+              placeholder="Write your message..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            ▶ SEND MESSAGE
+          </button>
+        </form>
+
+        <div class="contact__info">
+          <div class="contact__info-card">
+            <h3 class="contact__info-title">LET'S CONNECT</h3>
+            <div class="contact__socials">
+              <a href="https://github.com/if-elseEnjoyer" class="contact__social-link" aria-label="GitHub">
+                <span class="contact__social-icon">🐙</span>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/devansh-rajoura/" class="contact__social-link" aria-label="LinkedIn">
+                <span class="contact__social-icon">💼</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:devanshedt@gmail.com" class="contact__social-link" aria-label="Email">
+                <span class="contact__social-icon">📧</span>
+                <span>Email</span>
+              </a>
+            </div>
+            <div class="contact__availability">
+              <span class="hero__status-dot"></span>
+              Available for collaborations &amp; projects
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__tagline">GAME OVER? NOT YET. 🚀</p>
+      <div class="footer__links">
+        <a href="https://github.com/if-elseEnjoyer" class="footer__link">GitHub</a>
+        <span class="footer__divider">•</span>
+        <a href="https://www.linkedin.com/in/devansh-rajoura/" class="footer__link">LinkedIn</a>
+        <span class="footer__divider">•</span>
+        <a href="mailto:devanshedt@gmail.com" class="footer__link">Email</a>
+      </div>
+      <p class="footer__copy">
+        &copy; 2026 Devansh Rajoura &mdash; Built with HTML &amp; CSS ❤️
+      </p>
+      <a href="#top" class="footer__back-to-top" aria-label="Back to top">▲ TOP</a>
+    </div>
+  </footer>
 
 </body>
 </html>
